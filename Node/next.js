@@ -1,0 +1,1 @@
+import { Analytics } from "@vercel/analytics/dist/next/index.d.mts"
