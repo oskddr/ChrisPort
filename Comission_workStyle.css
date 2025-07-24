@@ -21,7 +21,7 @@
 
     --itemsHolderHight: 8500px;
     --itemsHolderWidth: 1000px;
-    --itemsHolderBorder: 1px solid red;
+    --itemsHolderBorder: 1px solid transparent;
     --itemsHolderGaps: 50px;
 }
 
