@@ -81,10 +81,11 @@
         @media only screen and (orientation: landscape) and (min-width: 1025px){
             #container{
                 position: absolute;
-                top: 50%;
+                top: 0;
                 left: 50%;
-                transform: translate(-50%, -50%);
-                height: 1150px;
+                margin-top: 25px;
+                transform: translateX(-50%);
+                height: auto;
                 width: 1025px;
                 display: flex;
                 flex-direction: column;
@@ -126,7 +127,7 @@
                 bottom: 0;
                 left: 0;
                 width: 100%;
-                height: 93%;
+                height: auto;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -291,9 +292,18 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                gap: 5%;
             }
-            #container #page #prices >*{
+            #container #page #prices #pr-1{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                border: none;
+            }
+            #container #page #prices #pr-1 >*{
                 position: relative;
                 height: 45%;
                 width: calc(100% / 3 - (10% / 3));
@@ -302,14 +312,13 @@
                 display: flex;
                 flex-wrap: wrap;
             }
-            #container #page #prices >* #mp{
+            #container #page #prices #pr-1 >* #mp{
                 position: absolute;
                 left: 50%;
                 top: -13px;
                 transform: translateX(-50%);
                 width: 125px;
                 height: 25px;
-                background-color: #fff;
                 border-radius: 25px;
                 display: flex;
                 justify-content: center;
@@ -317,8 +326,9 @@
                 color: #101010;
                 font-family: var(--thirdFont);
                 font-size: .65rem;
+                background: #fff;
             }
-            #container #page #prices >* #t-cont{
+            #container #page #prices #pr-1 >* #t-cont{
                 position: relative;
                 font-family: var(--thirdFont);
                 font-size: 1.45rem;
@@ -328,7 +338,7 @@
                 text-align: left;
                 transform: translateY(-10px);
             }
-            #container #page #prices >* #d-cont{
+            #container #page #prices #pr-1 >* #d-cont{
                 color: #9ca3af;
                 font-size: 1.25rem;
                 font-family: var(--thirdFont);
@@ -339,7 +349,7 @@
                 transform: translateY(-180px);
                 align-items: center;
             }
-            #container #page #prices >* #bottom{
+            #container #page #prices #pr-1 >* #bottom{
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -349,7 +359,7 @@
                 flex-direction: column;
                 gap: 20px;
             }
-            #container #page #prices >* #bottom #price-e{
+            #container #page #prices #pr-1 >* #bottom #price-e{
                 font-family: var(--thirdFont);
                 font-size: 2.25rem;
                 width: 95%;
@@ -359,12 +369,12 @@
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #price-e #price-v{
+            #container #page #prices #pr-1 >* #bottom #price-e #price-v{
                 display: inline-block;
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #inc{
+            #container #page #prices #pr-1 >* #bottom #inc{
                 height: 150%;
                 width: 100%;
                 display: flex;
@@ -372,14 +382,14 @@
                 align-items: center;
                 transform: translateY(-20px);
             }
-            #container #page #prices >* #bottom #inc ul{
+            #container #page #prices #pr-1 >* #bottom #inc ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 width: 100%;
                 height: 100%;
             }
-            #container #page #prices >* #bottom #inc ul li{
+            #container #page #prices #pr-1 >* #bottom #inc ul li{
                 position: relative;
                 font-family: var(--thirdFont);
                 width: 80%;
@@ -389,13 +399,13 @@
                 line-height: 1.75rem;
                 margin-bottom: var(--marg);
             }
-            #container #page #prices >* #bottom #inc ul li:first-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:first-child{
                 margin-top: 15px;
             }
-            #container #page #prices >* #bottom #inc ul li:last-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:last-child{
                 margin-bottom: 0;
             } 
-            #container #page #prices >* #bottom #inc ul li::before{
+            #container #page #prices #pr-1 >* #bottom #inc ul li::before{
                 content: '';
                 position: absolute;
                 left: -17%;
@@ -409,10 +419,83 @@
                 background-repeat: no-repeat;
                 filter: invert(68%) sepia(20%) saturate(1693%) hue-rotate(88deg) brightness(89%) contrast(83%);
             }
-            #container #page #prices >* #bottom #inc [custom] li::before{
+            #container #page #prices #pr-1 >* #bottom #inc [custom] li::before{
                 filter: invert(77%) sepia(52%) saturate(784%) hue-rotate(358deg) brightness(102%) contrast(105%) drop-shadow(1px 1px 2.5px gold);
             }
-            #manager, #prices {
+            #container #page #prices #t-a{
+                width: 960px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: var(--thirdFont);
+                font-size: 1.5rem;
+                border: none;
+            }
+            #container #page #prices #t-a p{
+                color: #c5cacf;
+                font-size: 1.2rem;
+                transform: translateY(-35px);
+            }
+            #container #page #prices #extra{
+                width: 900px;
+                height: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                background-color: #101010;
+                border: none;
+                transform: translateY(-80px);
+            }
+            #container #page #prices #extra >*{
+                position: relative;
+                height: 45%;
+                width: calc(100% / 2 - (10% / 2));
+                border: 1px solid #374152;
+                border-radius: 7px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+             #container #page #prices #extra >* #t-cont{
+                position: relative;
+                font-family: var(--thirdFont);
+                font-size: 1.45rem;
+                width: 90%;
+                margin-left: 5%;
+                height: auto;
+                text-align: left;
+            }
+            #container #page #prices #extra >* #d-cont{
+                color: #9ca3af;
+                font-size: 1.25rem;
+                font-family: var(--thirdFont);
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 2%;
+                height: auto;
+                transform: translateY(-20px);
+                align-items: center;
+            }
+            #container #page #prices #extra >* #price-e{
+                font-family: var(--thirdFont);
+                font-size: 2.25rem;
+                width: 95%;
+                margin-left: 5%;
+                margin-top: 0;
+                margin-bottom: 0;
+                opacity: 1;
+                transition: .5s ease-in-out;
+            }
+            #container #page #prices #extra >* #price-e #price-v{
+                display: inline-block;
+                opacity: 1;
+                transition: .5s ease-in-out;
+            }
+            #manager, #prices{
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
@@ -420,7 +503,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                height: 100%;
+                height: auto;
                 transition: .25s;
             }
             #manager.active, #prices.active {
@@ -472,9 +555,10 @@
         @media only screen and (min-width: 769px){
             #container{
                 position: absolute;
-                top: 50%;
+                top: 0;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%);
+                margin-top: 25px;
                 height: 1150px;
                 width: 1025px;
                 display: flex;
@@ -677,14 +761,17 @@
                 border-top: 2px solid #383838;
                 border-right: 2px solid #383838;
             }
-            #container #page #prices{
+            #container #page #prices #pr-1{
+                height: 100%;
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 gap: 5%;
+                border: none;
             }
-            #container #page #prices >*{
+            #container #page #prices #pr-1 >*{
                 position: relative;
                 height: 45%;
                 width: calc(100% / 3 - (10% / 3));
@@ -693,14 +780,13 @@
                 display: flex;
                 flex-wrap: wrap;
             }
-            #container #page #prices >* #mp{
+            #container #page #prices #pr-1 >* #mp{
                 position: absolute;
                 left: 50%;
                 top: -13px;
                 transform: translateX(-50%);
                 width: 125px;
                 height: 25px;
-                background-color: #fff;
                 border-radius: 25px;
                 display: flex;
                 justify-content: center;
@@ -708,8 +794,9 @@
                 color: #101010;
                 font-family: var(--thirdFont);
                 font-size: .65rem;
+                background: #fff;
             }
-            #container #page #prices >* #t-cont{
+            #container #page #prices #pr-1 >* #t-cont{
                 position: relative;
                 font-family: var(--thirdFont);
                 font-size: 1.45rem;
@@ -719,7 +806,7 @@
                 text-align: left;
                 transform: translateY(-10px);
             }
-            #container #page #prices >* #d-cont{
+            #container #page #prices #pr-1 >* #d-cont{
                 color: #9ca3af;
                 font-size: 1.25rem;
                 font-family: var(--thirdFont);
@@ -730,7 +817,7 @@
                 transform: translateY(-180px);
                 align-items: center;
             }
-            #container #page #prices >* #bottom{
+            #container #page #prices #pr-1 >* #bottom{
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -740,7 +827,7 @@
                 flex-direction: column;
                 gap: 20px;
             }
-            #container #page #prices >* #bottom #price-e{
+            #container #page #prices #pr-1 >* #bottom #price-e{
                 font-family: var(--thirdFont);
                 font-size: 2.25rem;
                 width: 95%;
@@ -750,12 +837,12 @@
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #price-e #price-v{
+            #container #page #prices #pr-1 >* #bottom #price-e #price-v{
                 display: inline-block;
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #inc{
+            #container #page #prices #pr-1 >* #bottom #inc{
                 height: 150%;
                 width: 100%;
                 display: flex;
@@ -763,14 +850,14 @@
                 align-items: center;
                 transform: translateY(-20px);
             }
-            #container #page #prices >* #bottom #inc ul{
+            #container #page #prices #pr-1 >* #bottom #inc ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 width: 100%;
                 height: 100%;
             }
-            #container #page #prices >* #bottom #inc ul li{
+            #container #page #prices #pr-1 >* #bottom #inc ul li{
                 position: relative;
                 font-family: var(--thirdFont);
                 width: 80%;
@@ -780,13 +867,13 @@
                 line-height: 1.75rem;
                 margin-bottom: var(--marg);
             }
-            #container #page #prices >* #bottom #inc ul li:first-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:first-child{
                 margin-top: 15px;
             }
-            #container #page #prices >* #bottom #inc ul li:last-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:last-child{
                 margin-bottom: 0;
             } 
-            #container #page #prices >* #bottom #inc ul li::before{
+            #container #page #prices #pr-1 >* #bottom #inc ul li::before{
                 content: '';
                 position: absolute;
                 left: -17%;
@@ -800,8 +887,81 @@
                 background-repeat: no-repeat;
                 filter: invert(68%) sepia(20%) saturate(1693%) hue-rotate(88deg) brightness(89%) contrast(83%);
             }
-            #container #page #prices >* #bottom #inc [custom] li::before{
+            #container #page #prices #pr-1 >* #bottom #inc [custom] li::before{
                 filter: invert(77%) sepia(52%) saturate(784%) hue-rotate(358deg) brightness(102%) contrast(105%) drop-shadow(1px 1px 2.5px gold);
+            }
+            #container #page #prices #t-a{
+                width: 960px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: var(--thirdFont);
+                font-size: 1.5rem;
+                border: none;
+            }
+            #container #page #prices #t-a p{
+                color: #c5cacf;
+                font-size: 1.2rem;
+                transform: translateY(-35px);
+            }
+            #container #page #prices #extra{
+                width: 900px;
+                height: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                background-color: #101010;
+                border: none;
+                transform: translateY(-80px);
+            }
+            #container #page #prices #extra >*{
+                position: relative;
+                height: 45%;
+                width: calc(100% / 2 - (10% / 2));
+                border: 1px solid #374152;
+                border-radius: 7px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+             #container #page #prices #extra >* #t-cont{
+                position: relative;
+                font-family: var(--thirdFont);
+                font-size: 1.45rem;
+                width: 90%;
+                margin-left: 5%;
+                height: auto;
+                text-align: left;
+            }
+            #container #page #prices #extra >* #d-cont{
+                color: #9ca3af;
+                font-size: 1.25rem;
+                font-family: var(--thirdFont);
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 2%;
+                height: auto;
+                transform: translateY(-20px);
+                align-items: center;
+            }
+            #container #page #prices #extra >* #price-e{
+                font-family: var(--thirdFont);
+                font-size: 2.25rem;
+                width: 95%;
+                margin-left: 5%;
+                margin-top: 0;
+                margin-bottom: 0;
+                opacity: 1;
+                transition: .5s ease-in-out;
+            }
+            #container #page #prices #extra >* #price-e #price-v{
+                display: inline-block;
+                opacity: 1;
+                transition: .5s ease-in-out;
             }
             #manager, #prices {
                 opacity: 0;
@@ -863,9 +1023,9 @@
         @media only screen and (min-width: 426px) and (max-width: 768px){
             #container{
                 position: absolute;
-                top: 50%;
+                top: -200px;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translateX(-50%);
                 height: 1850px;
                 width: 700px;
                 display: flex;
@@ -1067,9 +1227,18 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
-                gap: 5%;
             }
-            #container #page #prices >*{
+            #container #page #prices #pr-1{
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                border: none;
+            }
+            #container #page #prices #pr-1 >*{
                 position: relative;
                 height: calc(100% / 3 - (10% / 3));
                 width: calc(100% / 2 - (10% / 2));
@@ -1078,14 +1247,13 @@
                 display: flex;
                 flex-wrap: wrap;
             }
-            #container #page #prices >* #mp{
+            #container #page #prices #pr-1 >* #mp{
                 position: absolute;
                 left: 50%;
                 top: -13px;
                 transform: translateX(-50%);
                 width: 125px;
                 height: 25px;
-                background-color: #fff;
                 border-radius: 25px;
                 display: flex;
                 justify-content: center;
@@ -1093,8 +1261,9 @@
                 color: #101010;
                 font-family: var(--thirdFont);
                 font-size: .65rem;
+                background: #fff;
             }
-            #container #page #prices >* #t-cont{
+            #container #page #prices #pr-1 >* #t-cont{
                 position: relative;
                 font-family: var(--thirdFont);
                 font-size: 1.45rem;
@@ -1104,7 +1273,7 @@
                 text-align: left;
                 transform: translateY(-10px);
             }
-            #container #page #prices >* #d-cont{
+            #container #page #prices #pr-1 >* #d-cont{
                 color: #9ca3af;
                 font-size: 1.25rem;
                 font-family: var(--thirdFont);
@@ -1112,10 +1281,10 @@
                 margin-left: 5%;
                 margin-right: 2%;
                 height: 90px;
-                transform: translateY(-200px);
+                transform: translateY(-180px);
                 align-items: center;
             }
-            #container #page #prices >* #bottom{
+            #container #page #prices #pr-1 >* #bottom{
                 position: absolute;
                 left: 0;
                 bottom: 0;
@@ -1125,7 +1294,7 @@
                 flex-direction: column;
                 gap: 20px;
             }
-            #container #page #prices >* #bottom #price-e{
+            #container #page #prices #pr-1 >* #bottom #price-e{
                 font-family: var(--thirdFont);
                 font-size: 2.25rem;
                 width: 95%;
@@ -1135,12 +1304,12 @@
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #price-e #price-v{
+            #container #page #prices #pr-1 >* #bottom #price-e #price-v{
                 display: inline-block;
                 opacity: 1;
                 transition: .5s ease-in-out;
             }
-            #container #page #prices >* #bottom #inc{
+            #container #page #prices #pr-1 >* #bottom #inc{
                 height: 150%;
                 width: 100%;
                 display: flex;
@@ -1148,14 +1317,14 @@
                 align-items: center;
                 transform: translateY(-20px);
             }
-            #container #page #prices >* #bottom #inc ul{
+            #container #page #prices #pr-1 >* #bottom #inc ul{
                 list-style: none;
                 padding: 0;
                 margin: 0;
                 width: 100%;
                 height: 100%;
             }
-            #container #page #prices >* #bottom #inc ul li{
+            #container #page #prices #pr-1 >* #bottom #inc ul li{
                 position: relative;
                 font-family: var(--thirdFont);
                 width: 80%;
@@ -1165,13 +1334,13 @@
                 line-height: 1.75rem;
                 margin-bottom: var(--marg);
             }
-            #container #page #prices >* #bottom #inc ul li:first-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:first-child{
                 margin-top: 15px;
             }
-            #container #page #prices >* #bottom #inc ul li:last-child{
+            #container #page #prices #pr-1 >* #bottom #inc ul li:last-child{
                 margin-bottom: 0;
             } 
-            #container #page #prices >* #bottom #inc ul li::before{
+            #container #page #prices #pr-1 >* #bottom #inc ul li::before{
                 content: '';
                 position: absolute;
                 left: -17%;
@@ -1185,8 +1354,81 @@
                 background-repeat: no-repeat;
                 filter: invert(68%) sepia(20%) saturate(1693%) hue-rotate(88deg) brightness(89%) contrast(83%);
             }
-            #container #page #prices >* #bottom #inc [custom] li::before{
+            #container #page #prices #pr-1 >* #bottom #inc [custom] li::before{
                 filter: invert(77%) sepia(52%) saturate(784%) hue-rotate(358deg) brightness(102%) contrast(105%) drop-shadow(1px 1px 2.5px gold);
+            }
+            #container #page #prices #t-a{
+                width: 960px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-family: var(--thirdFont);
+                font-size: 1.5rem;
+                border: none;
+            }
+            #container #page #prices #t-a p{
+                color: #c5cacf;
+                font-size: 1.2rem;
+                transform: translateY(-35px);
+            }
+            #container #page #prices #extra{
+                width: 900px;
+                height: 600px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 5%;
+                background-color: #101010;
+                border: none;
+                transform: translateY(-80px);
+            }
+            #container #page #prices #extra >*{
+                position: relative;
+                height: 45%;
+                width: calc(100% / 2 - (10% / 2));
+                border: 1px solid #374152;
+                border-radius: 7px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+             #container #page #prices #extra >* #t-cont{
+                position: relative;
+                font-family: var(--thirdFont);
+                font-size: 1.45rem;
+                width: 90%;
+                margin-left: 5%;
+                height: auto;
+                text-align: left;
+            }
+            #container #page #prices #extra >* #d-cont{
+                color: #9ca3af;
+                font-size: 1.25rem;
+                font-family: var(--thirdFont);
+                width: 90%;
+                margin-left: 5%;
+                margin-right: 2%;
+                height: auto;
+                transform: translateY(-20px);
+                align-items: center;
+            }
+            #container #page #prices #extra >* #price-e{
+                font-family: var(--thirdFont);
+                font-size: 2.25rem;
+                width: 95%;
+                margin-left: 5%;
+                margin-top: 0;
+                margin-bottom: 0;
+                opacity: 1;
+                transition: .5s ease-in-out;
+            }
+            #container #page #prices #extra >* #price-e #price-v{
+                display: inline-block;
+                opacity: 1;
+                transition: .5s ease-in-out;
             }
             #manager, #prices {
                 opacity: 0;
@@ -2001,7 +2243,7 @@
         /* S Phone */
         @media only screen and (max-width: 320px){
             #container{
-                 position: absolute;
+                position: absolute;
                 top: 100px;
                 left: 50%;
                 transform: translateX(-50%);
@@ -2437,7 +2679,8 @@
                 </div>
             </div>
             <div id="prices">
-                <div>
+                <div id="pr-1">
+                    <div>
                     <div id="t-cont">
                         <h3>Basic System</h3>
                     </div>
@@ -2457,128 +2700,181 @@
                             </ul>
                         </div>
                     </div>
+                    </div>
+                    <div style="border: 2px solid #e5e7eb;">
+                        <div id="mp">
+                            <h2>Best Seller</h2>
+                        </div>
+                        <div id="t-cont">
+                            <h3>Advanced System</h3>
+                        </div>
+                        <div id="d-cont">
+                            <p>Ideal for individuals looking to create a complex and Advanced system for their game.</p>
+                        </div>
+                        <div id="bottom">
+                            <h2 id="price-e">
+                                from <span id="price-v" e="6,500R$">70€</span>
+                            </h2>
+                            <div id="inc">
+                                <ul style="--marg: 15px;">
+                                    <li>Delivery within 1-7 days</li>
+                                    <li>Responsive UI</li>
+                                    <li>2 free changes</li>
+                                    <li>Adjustable Modulescript</li>
+                                    <li>ReadMe Script</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="t-cont">
+                            <h3>Full Game</h3>
+                        </div>
+                        <div id="d-cont">
+                            <p">Perfect for creating a high-quality game with expert guidance and customizable features to bring your vision to life.</p>
+                        </div>
+                        <div id="bottom">
+                            <h2 id="price-e">
+                                from <span id="price-v" e="60,000R$">650€</span>
+                            </h2>
+                            <div id="inc">
+                                <ul style="--marg: 7px;">
+                                    <li>Delivery within 1-30 days</li>
+                                    <li>Responsive UI</li>
+                                    <li>4 free changes</li>
+                                    <li style="font-size: 1.2rem;">Compatible with all devices</li>
+                                    <li>Anti-Exploit</li>
+                                    <li>Adjustable Modulescripts</li>
+                                    <li>ReadMe Scripts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="t-cont">
+                            <h3>Basic Portfolio</h3>
+                        </div>
+                        <div id="d-cont">
+                            <p>Ideal for commissioners and creators looking to showcase their work to the public.</p>
+                        </div>
+                        <div id="bottom">
+                            <h2 id="price-e">
+                                from <span id="price-v" e="15,000R$">115€</span>
+                            </h2>
+                            <div id="inc">
+                                <ul style="--marg: 10px;">
+                                    <li>Delivery within 7-14 days</li>
+                                    <li>1 showcase page</li>
+                                    <li>2 free changes</li>
+                                    <li>Responsive design</li>
+                                    <li>Basic color palette</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 2px solid #e5e7eb;">
+                        <div id="mp">
+                            <h2>Popular</h2>
+                        </div>
+                        <div id="t-cont">
+                            <h3>Professional Portfolio</h3>
+                        </div>
+                        <div id="d-cont">
+                            <p>A portfolio made for experienced commissioners, offering a wide range of customization options.</p>
+                        </div>
+                        <div id="bottom">
+                            <h2 id="price-e">
+                                from <span id="price-v" e="85,000R$">799€</span>
+                            </h2>
+                            <div id="inc">
+                                <ul style="--marg: 7px;">
+                                    <li style="font-size: 1.2rem;">Delivery within 14-60 days</li>
+                                    <li>5 showcase pages</li>
+                                    <li>7 free changes</li>
+                                    <li>Responsive design</li>
+                                    <li>social media links</li>
+                                    <li>Advanced color palette</li>
+                                    <li style="font-size: 1.1rem;">Available portfolio references</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border: 3px solid gold; box-shadow: 0 0 12px gold;">
+                        <div id="mp" style="background: gold;">
+                            <h2>Custom</h2>
+                        </div>
+                        <div id="t-cont">
+                            <h3>Custom Order</h3>
+                        </div>
+                        <div id="d-cont">
+                            <p>Place either a custom Roblox order or a web order at an adjusted price.</p>
+                        </div>
+                        <div id="bottom">
+                            <h2 id="price-e">Negociable</h2>
+                            <div id="inc">
+                                <ul style="--marg: 7px;" custom>
+                                    <li>Custom Delivery Time</li>
+                                    <li>2-14 Free Revisions</li>
+                                    <li>Premium Features</li>
+                                    <li>Custom Requests</li>
+                                    <li>Prioritized Order</li>
+                                    <li>Full Control Over Design</li>
+                                    <li>Progress updates</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div style="border: 2px solid #e5e7eb;">
-                    <div id="mp">
-                        <h2>Best Seller</h2>
-                    </div>
-                    <div id="t-cont">
-                        <h3>Advanced System</h3>
-                    </div>
-                    <div id="d-cont">
-                        <p>Ideal for individuals looking to create a complex and Advanced system for their game.</p>
-                    </div>
-                    <div id="bottom">
+
+                <div id="t-a">
+                    <h2>Additional Services</h2>
+                    <p>Need something else? Here are a few more services I offer.</p>
+                </div>
+
+                <div id="extra">
+                    <div>
+                        <div id="t-cont">
+                            <h3>Website Monitoring for 2 Weeks</h3>
+                        </div>
+                        <div id="d-cont">
+                           Upon completion, I'll provide two weeks of site maintenance and address any bugs you report or that I discover.
+                        </div>
                         <h2 id="price-e">
-                            from <span id="price-v" e="6,500R$">70€</span>
+                            free
                         </h2>
-                        <div id="inc">
-                            <ul style="--marg: 15px;">
-                                <li>Delivery within 1-7 days</li>
-                                <li>Responsive UI</li>
-                                <li>2 free changes</li>
-                                <li>Adjustable Modulescript</li>
-                                <li>ReadMe Script</li>
-                            </ul>
+                    </div>
+                    <div>
+                        <div id="t-cont">
+                            <h3>Hosting and Domain Setup</h3>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="t-cont">
-                        <h3>Full Game</h3>
-                    </div>
-                    <div id="d-cont">
-                        <p">Perfect for creating a high-quality game with expert guidance and customizable features to bring your vision to life.</p>
-                    </div>
-                    <div id="bottom">
+                        <div id="d-cont">
+                            I will help you set up your new website and register a domain for it. Please note that the domain fee is not included in the original price.
+                        </div>
                         <h2 id="price-e">
-                            from <span id="price-v" e="60,000R$">650€</span>
+                            from <span id="price-v" e="1,500R$">10€</span>
                         </h2>
-                        <div id="inc">
-                            <ul style="--marg: 7px;">
-                                <li>Delivery within 1-30 days</li>
-                                <li>Responsive UI</li>
-                                <li>4 free changes</li>
-                                <li style="font-size: 1.2rem;">Compatible with all devices</li>
-                                <li>Anti-Exploit</li>
-                                <li>Adjustable Modulescripts</li>
-                                <li>ReadMe Scripts</li>
-                            </ul>
+                    </div>
+                    <div>
+                        <div id="t-cont">
+                            <h3>Extended Website Monitoring</h3>
                         </div>
-                    </div>
-                </div>
-                <div>
-                    <div id="t-cont">
-                        <h3>Basic Portfolio</h3>
-                    </div>
-                    <div id="d-cont">
-                        <p>Ideal for commissioners and creators looking to showcase their work to the public.</p>
-                    </div>
-                    <div id="bottom">
+                        <div id="d-cont">
+                           I'll routinely verify your site's functionality, keep your hosting updated, and swiftly resolve any issues that arise.
+                        </div>
                         <h2 id="price-e">
-                            from <span id="price-v" e="15,000R$">115€</span>
+                            from <span id="price-v" e="3,200R$ / M">35€ / M</span>
                         </h2>
-                        <div id="inc">
-                            <ul style="--marg: 10px;">
-                                <li>Delivery within 7-14 days</li>
-                                <li>1 showcase page</li>
-                                <li>2 free changes</li>
-                                <li>Responsive design</li>
-                                <li>Basic color palette</li>
-                            </ul>
+                    </div>
+                    <div>
+                        <div id="t-cont">
+                            <h3>Content Boosting</h3>
                         </div>
-                    </div>
-                </div>
-                <div style="border: 2px solid #e5e7eb;">
-                    <div id="mp">
-                        <h2>Popular</h2>
-                    </div>
-                    <div id="t-cont">
-                        <h3>Professional Portfolio</h3>
-                    </div>
-                    <div id="d-cont">
-                        <p>A portfolio made for experienced commissioners, offering a wide range of customization options.</p>
-                    </div>
-                    <div id="bottom">
+                        <div id="d-cont">
+                            I'll showcase the game we've created on our social media platforms in an attempt to boost your player base and visibility.
+                        </div>
                         <h2 id="price-e">
-                            from <span id="price-v" e="85,000R$">799€</span>
+                            from <span id="price-v" e="700R$">5€</span>
                         </h2>
-                        <div id="inc">
-                            <ul style="--marg: 7px;">
-                                <li style="font-size: 1.2rem;">Delivery within 14-60 days</li>
-                                <li>5 showcase pages</li>
-                                <li>7 free changes</li>
-                                <li>Responsive design</li>
-                                <li>social media links</li>
-                                <li>Advanced color palette</li>
-                                <li style="font-size: 1.1rem;">Available portfolio references</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div style="border: 3px solid gold; box-shadow: 0 0 12px gold;">
-                    <div id="mp" style="background: gold;">
-                        <h2>Custom</h2>
-                    </div>
-                    <div id="t-cont">
-                        <h3>Custom Order</h3>
-                    </div>
-                    <div id="d-cont">
-                        <p>Place either a custom Roblox order or a web order at an adjusted price.</p>
-                    </div>
-                    <div id="bottom">
-                        <h2 id="price-e">Negociable</h2>
-                        <div id="inc">
-                            <ul style="--marg: 7px;" custom>
-                                <li>Custom Delivery Time</li>
-                                <li>2-14 Free Revisions</li>
-                                <li>Premium Features</li>
-                                <li>Custom Requests</li>
-                                <li>Prioritized Order</li>
-                                <li>Full Control Over Design</li>
-                                <li>Progress updates</li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
